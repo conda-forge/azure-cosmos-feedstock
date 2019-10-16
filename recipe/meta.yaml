@@ -1,5 +1,5 @@
 {% set name = "azure-cosmos" %}
-{% set version = "3.1.1" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3922891baf59742556cbc8bd96aaba4f582a6a8f9bbccb8f2b0376539a21761
+  sha256: 7f8ac99e4e40c398089fc383bfadcdc83376f72b88532b0cac0b420357cd08c7
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
