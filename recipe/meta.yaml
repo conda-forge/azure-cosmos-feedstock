@@ -1,5 +1,5 @@
 {% set name = "azure-cosmos" %}
-{% set version = "4.5.1" %}
+{% set version = "4.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4ada8381306eec413c01bc50a778e264dc3f4fafa9d696f9df8436148d2aea8
+  sha256: daec6ac201c6473b092b62aee71e381beeb6c3a8dc361249832b7048c4f061e2
 
 build:
   noarch: python
