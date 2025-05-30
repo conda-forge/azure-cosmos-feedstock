@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-cosmos
-  version: 4.9.0
+  version: 3.2.0
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: c70db4cbf55b0ff261ed7bb8aa325a5dfa565d3c6eaa43d75d26ae5e2ad6d74f
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 4f77cc558fecffac04377ba758ac4e23f076dc1c54e2cf2515f85bc15cbde5c6
 
 build:
   number: 0
@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - azure-core >=1.30.0
-    - typing-extensions >=4.6.0
+    - requests >=2.10.0
+    - six >=1.6
 
 tests:
   - python:
