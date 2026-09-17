@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-cosmos
-  version: "4.16.4"
+  version: "4.17.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 5a98d33ce6d539a926f47c67b14587fbb8ba4fd662751ff8b0ebe7f9d3765a2e
+  sha256: 38559f209ce13d135c07b12652d72d352bac6b6d6b3007006ce8fc174c815b07
 
 build:
   number: 0
