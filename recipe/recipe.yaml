@@ -30,7 +30,9 @@ tests:
   - python:
       imports:
         - azure.cosmos
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 about:
   license: MIT
   license_file: LICENSE
